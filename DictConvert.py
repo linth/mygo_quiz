@@ -44,6 +44,7 @@ class DictConvert:
 class DictConvertTest(unittest.TestCase):
     """ unit test for the class of DictConvert. """
     def test_parse_dict(self):
+        """ testing for parse_dict. """
         input_value = {'hired': {'be': {'to': {'deserve': 'I'}}}}
         l = []
         dc = DictConvert()
@@ -57,6 +58,7 @@ class DictConvertTest(unittest.TestCase):
             ['be', 'to', 'deserve', 'I']) # error.
     
     def test_gen_reversed_dict(self):
+        """ testing for gen_reversed_dict. """
         l = ['hired', 'be', 'to', 'deserve', 'I']
         l2 = ['1', '2', '3', '4', '5']
 
@@ -79,6 +81,7 @@ class DictConvertTest(unittest.TestCase):
             {'1': {'2': {'3': {'2': '1'}}}}) # error
 
     def test_whole_process(self):
+        """ testing for whole_process. """
         input_value = {'hired': {'be': {'to': {'deserve': 'I'}}}}
         l = []
         dc = DictConvert()
